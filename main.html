@@ -137,7 +137,7 @@
                 <h5 class="card-title text-center">
                     Featured
                 </h5>
-                <p onload="randomFeatures()" class="card-text" id="featured-item"></p>
+                <p onload="randomFeatures()" class="card-text" id="featured-item">...</p>
                 
             </div>
         </div>
@@ -168,7 +168,7 @@ var items = [
  "This website is still in dev."];
  function randomFeatures(){
 var randomNumber = Math.floor(Math.random() * (items.length));
-document.getElementById('featured-item').innerHTML = items[randomNumber];
+document.getElementById("featured-item").innerHTML = items[randomNumber];
  }           
             
         </script>
