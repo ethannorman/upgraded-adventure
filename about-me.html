@@ -92,14 +92,7 @@ opacity: 1 !important;
     .projects-card{
         margin-bottom: 2rem;
     }
-    .project-img-one{
-        transition: transform .2s;
-    }
-    .project-img-one:active:focus {
-  -ms-transform: scale(1.8); /* IE 9 */
-  -webkit-transform: scale(1.8); /* Safari 3-8 */
-  transform: scale(1.8); 
-}
+    
 </style>
 
 <body>
@@ -214,7 +207,7 @@ opacity: 1 !important;
                     <div class="row">
                         <div class="col-sm">
                             <div class="card" style="width: 18rem; border-radius: 0px !important;">
-                                <img src="Pictures/consolerpgpic.png" class="project-img-one card-img-top" alt="ConsoleRPG">
+                                <img onclick="zoomIn()" id="zoom-img-one" src="Pictures/consolerpgpic.png" class="project-img-one card-img-top" alt="ConsoleRPG">
                                 <div class="card-body">
                                     <p class="card-text">The files for ConsoleRPG are on GitHub.</p>
                                   <a class="btn btn-primary" href="#" target="_blank">Files</a>
@@ -251,6 +244,18 @@ opacity: 1 !important;
       </div>
       
     <!-- Optional JavaScript -->
+    <script>
+        function zoomIn(){
+    $('#zoom-img-one').animate({
+        width:'300px',
+        height:'300px',
+        top:'0',
+        left:'0',
+        'font-size':'50px',
+        'line-height':'300px'
+    }, 1000);
+        }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
