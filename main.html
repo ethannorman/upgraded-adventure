@@ -141,6 +141,22 @@
         </div>
     </div>
         <!-- Optional JavaScript -->
+        <script>            
+            var items = [
+                'Bootstrap is Html\, css\, and JavaScript.', 
+            'I love cute fluffy floof cats.', 
+            'That\'s Time And Relative Dimensions In Space.', 
+            'Cats are liquid.', 
+            'Spaaaaaaacccccccceeeeeeee!',
+             'This website is still in dev.'];
+             function randomFeatures(){
+                
+            var randomNumber = Math.floor(Math.random() * (items.length));
+            
+            document.getElementById("featured-item").innerHTML = items[randomNumber];
+            document.getElementById("featured-item").onload("randomFeatures");
+             };                      
+        </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -153,23 +169,5 @@
             crossorigin="anonymous"></script>
         
 </body>
-<script>            
 
-    var items = [
-        'Bootstrap is Html\, css\, and JavaScript.', 
-    'I love cute fluffy floof cats.', 
-    'That\'s Time And Relative Dimensions In Space.', 
-    'Cats are liquid.', 
-    'Spaaaaaaacccccccceeeeeeee!',
-     'This website is still in dev.'];
-     function randomFeatures(){
-        
-    var randomNumber = Math.floor(Math.random() * (items.length));
-    
-    document.getElementById("featured-item").innerHTML = items[randomNumber];
-    document.getElementById("featured-item").onload("randomFeatures");
-     };
-                
-                
-</script>
 </html>
