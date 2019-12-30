@@ -71,7 +71,7 @@
     }
 </style>
 
-<body>
+<body onload="random_item(items)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">KeyMaster</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -137,12 +137,8 @@
                 <h5 class="card-title text-center">
                     Featured
                 </h5>
-                <p class="card-text" id="one">This website is still in dev.</p>
-                <p class="card-text" id="two">Bootstrap is Html, css, and JavaScript.</p>
-                <p class="card-text" id="three">I love cute fluffy floof cats.</p>
-                <p class="card-text" id="four">That's Time And Relative Dimensions In Space.</p>
-                <p class="card-text" id="five">Cats are liquid.</p>
-                <p class="card-text" id="six">Spaaaaaaacccccccceeeeeeee!</p>
+                <p class="card-text" id="featured-item"></p>
+                
             </div>
         </div>
     </div>
@@ -160,12 +156,22 @@
         <script>            
             
             
-    $('#one').delay(1000).show(0).delay(1000).hide(0);
-    $('#two').delay(2000).show(0).delay(1000).hide(0);
-    $('#three').delay(3000).show(0).delay(1000).hide(0);
-    $('#four').delay(4000).show(0).delay(1000).hide(0);
-    $('#five').delay(5000).show(0).delay(1000).hide(0);
-    $('#six').delay(6000).show(0).delay(1000).hide(0);
+            
+            function random_item(items)
+{
+  
+return items[Math.floor(Math.random()*items.length)];
+     
+}
+
+var items = [
+    "Bootstrap is Html, css, and JavaScript.", 
+"I love cute fluffy floof cats.", 
+"That's Time And Relative Dimensions In Space.", 
+"Cats are liquid.", 
+"Spaaaaaaacccccccceeeeeeee!",
+ "This website is still in dev."];
+document.getElementById("featured-item").innerHTML = (random_item(items));
             
             
         </script>
