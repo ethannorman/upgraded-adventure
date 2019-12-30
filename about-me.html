@@ -207,7 +207,7 @@ opacity: 1 !important;
                     <div class="row">
                         <div class="col-sm">
                             <div class="card" style="width: 18rem; border-radius: 0px !important;">
-                                <img onclick="zoomIn()" id="zoom-img-one" src="Pictures/consolerpgpic.png" class="project-img-one card-img-top" alt="ConsoleRPG">
+                                <img id="zoom-img-one" src="Pictures/consolerpgpic.png" class="project-img-one card-img-top" alt="ConsoleRPG">
                                 <div class="card-body">
                                     <p class="card-text">The files for ConsoleRPG are on GitHub.</p>
                                   <a class="btn btn-primary" href="#" target="_blank">Files</a>
@@ -245,7 +245,8 @@ opacity: 1 !important;
       
     <!-- Optional JavaScript -->
     <script>
-        function zoomIn(){
+        $(document).ready(function(){
+  $("#zoom-img-one").click(function(){
     $('#zoom-img-one').animate({
         width:'300px',
         height:'300px',
@@ -254,7 +255,10 @@ opacity: 1 !important;
         'font-size':'50px',
         'line-height':'300px'
     }, 1000);
-        }
+  });
+});
+    
+        
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
