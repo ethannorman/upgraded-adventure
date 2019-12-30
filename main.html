@@ -135,7 +135,7 @@
                 <h5 class="card-title text-center">
                     Featured
                 </h5>
-                <p class="card-text" id="featured-item"></p>
+                <p onload="randomFeatures()" class="card-text" id="featured-item"></p>
                 
             </div>
         </div>
@@ -154,7 +154,7 @@
             var randomNumber = Math.floor(Math.random() * (items.length));
             
             document.getElementById("featured-item").innerHTML = items[randomNumber];
-            document.getElementById("featured-item").onload("randomFeatures");
+            
              };                      
         </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
