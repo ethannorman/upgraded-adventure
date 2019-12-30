@@ -15,6 +15,17 @@
 <style>
     body {
         padding-top: 50px;
+        background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(75, 75, 75, 0.45), 
+      rgba(75, 75, 75, 0.45)
+    ),
+    /* bottom, image */
+    url('Pictures/blacksandpaper.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     .profile-picture{
 border-radius: 100px;
@@ -23,18 +34,6 @@ width: 120px;
     }
     .jumbotron-custom{
         border-radius: 0px !important;
-        background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(75, 75, 75, 0.45), 
-      rgba(75, 75, 75, 0.45)
-    ),
-    /* bottom, image */
-    url('Pictures/energy.jpg');
-        
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        color: rgb(255, 255, 255) !important;
         
     }
     .about-text{
@@ -79,7 +78,7 @@ width: 120px;
         </div>
     </nav>
     <div class="container">
-        <div class="jumbotron jumbotron-custom">
+        <div class="jumbotron bg-dark text-white jumbotron-custom">
             <h1 class="display-4 text-center">About Me!</h1>
             
             <div class="profile-picture-container text-center">
