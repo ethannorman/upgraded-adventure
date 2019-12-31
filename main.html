@@ -85,8 +85,8 @@
     .btn-page-link{
         background-color: white;
         border-radius: 0px;
-        color:rgba(75, 75, 75, 0.45);
-        transition: transform .1s; /* Animation */
+        color:rgb(0, 0, 0);
+        transition: transform .07s; /* Animation */
 
     }
     .btn-page-link:focus{
@@ -94,7 +94,9 @@
     
     }
     .btn-page-link:active{
-        transform: scale(0.5);
+        -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8); 
     }
 </style>
 
