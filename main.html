@@ -112,6 +112,23 @@
   -webkit-transform: scale(0.8); /* Safari 3-8 */
   transform: scale(0.8); 
     }
+    .dropdown-menu-custom{
+        border-radius: 0px !important;
+        transition: ease-in 0.5 !important;
+        background-color: rgba(53, 59, 65, 0.76) !important;
+
+    }
+    .dropdown-item-custom{
+        background-color: white;
+        border-radius: 0px;
+        color:rgb(0, 0, 0);
+        transition: transform .02s; /* Animation */
+    }
+    .dropdown-item-custom:active{
+        -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8); 
+    }
 </style>
 
 <body>
@@ -137,10 +154,10 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown link
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">About Me</a>
-                        <a class="dropdown-item" href="#">Objective</a>
-                        <a class="dropdown-item" href="#">Rede</a>
+                    <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item dropdown-item-custom" href="#">About Me</a>
+                        <a class="dropdown-item dropdown-item-custom" href="#">Objective</a>
+                        <a class="dropdown-item dropdown-item-custom" href="#">Rede</a>
                     </div>
                 </li>
             </ul>
