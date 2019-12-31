@@ -83,14 +83,18 @@
         margin-bottom: 6px !important;
     }
     .btn-page-link{
-        background-color: tomato;
+        background-color: white;
         border-radius: 0px;
         color:rgba(75, 75, 75, 0.45);
+        transition: transform .1s; /* Animation */
 
     }
     .btn-page-link:focus{
         box-shadow: none !important;
     
+    }
+    .btn-page-link:active{
+        transform: scale(0.5);
     }
 </style>
 
