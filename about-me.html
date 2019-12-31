@@ -207,7 +207,22 @@ opacity: 1 !important;
                     <div class="row">
                         <div class="col-sm">
                             <div class="card" style="width: 18rem; border-radius: 0px !important;">
-                                <img value="Zoom in" type="button" id="zoom-img-one" src="Pictures/consolerpgpic.png" class="project-img-one card-img-top" alt="ConsoleRPG">
+                                <img  data-toggle="modal" data-target="#exampleModalCenter" type="button" src="Pictures/consolerpgpic.png" class="project-img-one card-img-top" alt="ConsoleRPG">
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <img src="Pictures/consolerpgpic.png" style="width: 200px;">
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
                                 <div class="card-body">
                                     <p class="card-text">The files for ConsoleRPG are on GitHub.</p>
                                   <a class="btn btn-primary" href="#" target="_blank">Files</a>
@@ -245,18 +260,7 @@ opacity: 1 !important;
       
     <!-- Optional JavaScript -->
     <script>
-        $(function() {
-    $('#zoom-img-one').on('click', function() {
-        var scale  = parseInt($('#zoom-img-one').css('font-size'),10);
-            nScale = $(this).index()===0 ? scale+1 : scale-1;
-        $('#zoom-img-one').stop(true,true).animate({  fontSize: nScale }, {
-            step: function(now,fx) {
-                $(this).css('transform','scale('+parseFloat(now/10)+')');
-            },
-            duration: 300
-        },'linear');
-   });     
-});
+       
     
         
     </script>
