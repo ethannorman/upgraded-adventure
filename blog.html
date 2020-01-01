@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>KeyMaster - Home</title>
+</head>
+<style>
+    html {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        padding-top: 55px;
+        background:
+            /* top, transparent red, faked with gradient */
+            linear-gradient(rgba(75, 75, 75, 0.45),
+                rgba(75, 75, 75, 0.45)),
+            /* bottom, image */
+            url('Pictures/blacksandpaper.jpg');
+
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    .navbar{
+        background-color: white !important;
+    }
+    .navbar-brand{
+        color: black !important;
+    }
+    .nav-link{
+        color:rgb(0, 0, 0) !important;
+    }
+
+    .jumbotron-custom {
+        background-color: rgba(53, 59, 65, 0.76) !important;
+    }
+
+    .alert-custom {
+        margin-bottom: 0rem !important;
+        background-color: rgb(255, 231, 17) !important;
+        color: black !important;
+        border-radius: 0px !important;
+        position: fixed !important;
+        left: 0;
+        right: 0;
+
+    }
+
+    .logo {
+        border-radius: 100px;
+        border: solid black 1px;
+        width: 120px;
+        background-color: white;
+    }
+
+    .logo-container {
+        margin-bottom: 1rem;
+    }
+
+    .featured-card {
+        border-radius: 0px !important;
+        background-color: rgba(53, 59, 65, 0.76) !important;
+        color: white !important;
+
+
+    }
+    .about{
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+    }
+    .objective{
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+    }
+    .rede{
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+    }
+    .btn-page-link{
+        background-color: white;
+        border-radius: 0px;
+        color:rgb(0, 0, 0);
+        transition: transform .02s; /* Animation */
+
+    }
+    .btn-page-link:focus{
+        box-shadow: none !important;
+    
+    }
+    .btn-page-link:active{
+        -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8); 
+    }
+    .featured-btn{
+        background-color: white;
+        border-radius: 0px;
+        color:rgb(0, 0, 0);
+        transition: transform .02s; /* Animation */
+    }
+    .featured-btn:focus{
+        box-shadow: none !important;
+    }
+    .featured-btn:active{
+        -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8); 
+    }
+    .dropdown-menu-custom{
+        border-radius: 0px !important;
+        transition: ease-in 0.5 !important;
+        background-color: #fff !important;
+
+    }
+    .dropdown-item-custom{
+        background: none !important;
+        border-radius: 0px;
+        color: #000;
+        transition: transform .02s; /* Animation */
+    }
+    
+    .dropdown-item-custom:active{
+        -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8); 
+  background: none !important;
+    }
+    .navbar-toggler{
+        border-radius: 0px !important;
+        transition: transform .02s; /* Animation */
+        background: none !important;
+    }
+    .navbar-toggler:active{
+        -ms-transform: scale(0.8); /* IE 9 */
+  -webkit-transform: scale(0.8); /* Safari 3-8 */
+  transform: scale(0.8);
+    }
+    .navbar-toggler:focus{
+        outline: none !important;
+
+    }
+    .fa-ellipsis-h{
+        color: #000 !important;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">KeyMaster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-ellipsis-h"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">...</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item dropdown-item-custom" href="#">About Me</a>
+                        <a class="dropdown-item dropdown-item-custom" href="#">Objective</a>
+                        <a class="dropdown-item dropdown-item-custom" href="#">Rede</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron bg-dark text-white jumbotron-custom">
+            <h1 class="display-4 text-center">Welcome to the KeyRing!</h1>
+            <div class="logo-container text-center">
+                <img src="Pictures/keyring.png" class="logo">
+
+            </div>
+           
+        </div>
+    </div>
+    <div class="blog-post-container container">
+        <div class="card blog-post">
+            <div class="card-body">
+                <h5 class="card-title text-center">
+                    Featured
+                </h5>
+                <p class="card-text text-center">Bow-ties are cool!</p>
+                
+            </div>
+        </div>
+    </div>
+        <!-- Optional JavaScript -->
+        <script>            
+            
+        </script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
