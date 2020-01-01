@@ -146,6 +146,27 @@ opacity: 1 !important;
         color: #000 !important;
         font-size: 30px;
     }
+    .site-footer{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        
+       
+    }
+    #current-year{
+        display: inline;
+    }
+    .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.site-footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+.copyright-notice{
+    text-align: center;
+}
 </style>
 
 <body>
@@ -295,10 +316,16 @@ opacity: 1 !important;
             </div>
         </div>
       </div>
-      
+      <div class="wrapper">
+        <div class="push"></div>
+        <footer class="site-footer">
+            <p class="copyright-notice">&copy; 2020 - <span id="current-year"></span> KeyMaster</p>
+            
+        </footer>
+    </div>
     <!-- Optional JavaScript -->
     <script>
-       
+                   document.getElementById("current-year").innerHTML = new Date().getFullYear();
     
         
     </script>
