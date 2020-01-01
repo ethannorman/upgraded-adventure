@@ -107,6 +107,13 @@
         margin-left: 10px;
         font-size: 12px;
     }
+    .site-footer{
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+    #current-year{
+        display: inline;
+    }
 </style>
 
 <body>
@@ -176,9 +183,14 @@
             </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <p class="copyright-notice">&copy; <span id="current-year"></span></p>
+        
+    </footer>
         <!-- Optional JavaScript -->
         <script>            
-            
+            document.getElementById("current-year").innerHTML = new Date().getFullYear();
         </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
