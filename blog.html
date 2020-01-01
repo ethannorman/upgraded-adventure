@@ -110,15 +110,20 @@
     .site-footer{
         background-color: white;
         color: rgb(0, 0, 0);
-        position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
+       
     }
     #current-year{
         display: inline;
     }
+    .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.site-footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
 </style>
 
 <body>
@@ -188,11 +193,13 @@
             </div>
         </div>
     </div>
-
+    <div class="wrapper">
+    <div class="push"></div>
     <footer class="site-footer">
         <p class="copyright-notice">&copy; <span id="current-year"></span></p>
         
     </footer>
+</div>
         <!-- Optional JavaScript -->
         <script>            
             document.getElementById("current-year").innerHTML = new Date().getFullYear();
