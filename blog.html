@@ -128,16 +128,7 @@
 .copyright-notice{
     text-align: center;
 }
-.footer-logo {
-        border-radius: 100px;
-        border: solid black 1px;
-        width: 110px;
-        background-color: white;
-    }
 
-    .footer-logo-container {
-        margin-bottom: 1rem;
-    }
 </style>
 
 <body>
@@ -199,7 +190,19 @@
                 <h3 class="blog-title card-title">
                     First Job
                 </h3>
-                <h5 class="blog-subtitle">Went to my first job<span style="display: inline;" class="date-stamp">January 1, 2020<span class="time-stamp">05:00pm</span></span></h5>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <h5 class="blog-subtitle">Went to my first job</h5>
+                      </div>
+                      <div class="col-sm">
+                        <p class="date-stamp">January 1, 2020</p>
+                      </div>
+                      <div class="col-sm">
+                        <p class="time-stamp">05:00pm</p>
+                      </div>
+                    </div>
+                  </div>
                 <div class="blog-img-container">
                     <img class="blog-img" src="..." alt="No picture">
                 </div>
@@ -211,10 +214,7 @@
     <div class="push"></div>
     <footer class="site-footer">
         <p class="copyright-notice">&copy; 2020 - <span id="current-year"></span> KeyMaster</p>
-        <div class="footer-logo-container text-center">
-            <img src="Pictures/keylogo.png" class="footer-logo">
-
-        </div>
+        
     </footer>
 </div>
         <!-- Optional JavaScript -->
